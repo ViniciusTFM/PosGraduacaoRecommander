@@ -1,0 +1,206 @@
+gerir;1;Computação em Nuvem*
+gerenciamento;1;Arquitetura de Software Distribuido*gerenciamento;1;Banco de Dados*gerenciamento;1;Business Intelligence*
+atualizacao;2;Banco de Dados*
+modernos;1;Arquitetura de Software Distribuido*
+ciencia;1;Arquitetura de Software Distribuido*ciencia;2;Business Intelligence*ciencia;2;Engenharia de Software*
+arquitetos;1;Arquitetura de Software Distribuido*
+tecnologias;4;Arquitetura de Software Distribuido*tecnologias;1;Banco de Dados*tecnologias;1;Business Intelligence*tecnologias;1;Engenharia de Software*
+formas;1;Business Intelligence*
+bancos;4;Banco de Dados*
+contexto;2;Arquitetura de Software Distribuido*
+orientam;1;Arquitetura de Software Distribuido*orientam;1;Business Intelligence*
+desenvolver;2;Business Intelligence*desenvolver;1;Engenharia de Software*
+solidos;1;Banco de Dados*
+arquiteturas;2;Arquitetura de Software Distribuido*
+construcao;1;Arquitetura de Software Distribuido*
+banco;2;Arquitetura de Software Distribuido*banco;1;Business Intelligence*
+considerando;1;Arquitetura de Software Distribuido*
+atuam;2;Arquitetura de Software Distribuido*atuam;1;Banco de Dados*atuam;3;Business Intelligence*
+diplomados;1;Arquitetura de Software Distribuido*
+ambientes;1;Computação em Nuvem*
+explicitar;1;Arquitetura de Software Distribuido*
+basica;1;Engenharia de Software*
+afins;1;Business Intelligence*
+podem;1;Computação em Nuvem*
+mercado;1;Arquitetura de Software Distribuido*mercado;1;Banco de Dados*mercado;2;Business Intelligence*mercado;1;Engenharia de Software*
+vinicius;2;Arquitetura de Software Distribuido*vinicius;1;Banco de Dados*vinicius;1;Computação em Nuvem*
+ampliar;1;Arquitetura de Software Distribuido*
+consultores;1;Arquitetura de Software Distribuido*consultores;2;Business Intelligence*consultores;1;Engenharia de Software*
+planos;1;Computação em Nuvem*
+desejam;1;Computação em Nuvem*
+tecnicos;1;Arquitetura de Software Distribuido*tecnicos;1;Business Intelligence*
+relacionados;2;Arquitetura de Software Distribuido*relacionados;2;Business Intelligence*
+forma;1;Computação em Nuvem*
+especificos;1;Banco de Dados*
+analise;1;Engenharia de Software*
+prestadores;1;Business Intelligence*
+computacao;4;Arquitetura de Software Distribuido*computacao;2;Business Intelligence*computacao;4;Computação em Nuvem*computacao;2;Engenharia de Software*
+nivel;1;Arquitetura de Software Distribuido*nivel;2;Banco de Dados*nivel;4;Business Intelligence*nivel;1;Engenharia de Software*
+proveito;1;Computação em Nuvem*
+gestores;1;Business Intelligence*gestores;1;Computação em Nuvem*
+soa;1;Arquitetura de Software Distribuido*
+elaborar;1;Business Intelligence*
+aprofundamento;1;Banco de Dados*
+abrangente;1;Banco de Dados*
+participante;2;Arquitetura de Software Distribuido*
+ordenada;1;Computação em Nuvem*
+assim;1;Computação em Nuvem*
+graduados;1;Banco de Dados*
+gerenciar;1;Business Intelligence*
+elementos;1;Arquitetura de Software Distribuido*elementos;2;Banco de Dados*
+organizacionais;1;Engenharia de Software*
+contextos;1;Engenharia de Software*
+intelligence;1;Business Intelligence*
+formacao;2;Business Intelligence*formacao;1;Engenharia de Software*
+informatica;1;Banco de Dados*informatica;1;Business Intelligence*informatica;2;Computação em Nuvem*informatica;1;Engenharia de Software*
+habilidades;1;Engenharia de Software*
+migracao;2;Computação em Nuvem*
+superior;1;Arquitetura de Software Distribuido*superior;2;Banco de Dados*superior;4;Business Intelligence*superior;1;Computação em Nuvem*superior;1;Engenharia de Software*
+combinando;1;Banco de Dados*
+vista;1;Arquitetura de Software Distribuido*
+acompanhamento;1;Banco de Dados*
+tecnicas;1;Arquitetura de Software Distribuido*tecnicas;1;Business Intelligence*
+relacionadas;1;Business Intelligence*
+organizacao;1;Business Intelligence*
+suporte;1;Arquitetura de Software Distribuido*suporte;1;Business Intelligence*suporte;1;Engenharia de Software*
+inovacoes;1;Banco de Dados*
+provedores;2;Computação em Nuvem*
+administrator;1;Business Intelligence*
+compreender;1;Business Intelligence*
+participantes;1;Arquitetura de Software Distribuido*participantes;2;Business Intelligence*
+conhecer;1;Computação em Nuvem*
+legados;1;Arquitetura de Software Distribuido*
+arquiteturais;1;Arquitetura de Software Distribuido*
+ambito;1;Business Intelligence*
+softwares;2;Arquitetura de Software Distribuido*
+recentes;1;Banco de Dados*
+performance;1;Business Intelligence*
+sistemas;2;Arquitetura de Software Distribuido*sistemas;2;Banco de Dados*sistemas;5;Business Intelligence*sistemas;3;Engenharia de Software*
+projetos;2;Arquitetura de Software Distribuido*projetos;3;Business Intelligence*projetos;1;Computação em Nuvem*
+cursos;1;Arquitetura de Software Distribuido*
+principais;1;Business Intelligence*
+investigando;1;Computação em Nuvem*
+negocio;1;Arquitetura de Software Distribuido*negocio;1;Computação em Nuvem*
+ferramentas;1;Arquitetura de Software Distribuido*ferramentas;1;Business Intelligence*
+processos;2;Arquitetura de Software Distribuido*processos;1;Business Intelligence*
+proporcionar;1;Arquitetura de Software Distribuido*proporcionar;1;Business Intelligence*
+estejam;1;Computação em Nuvem*
+solucoes;1;Arquitetura de Software Distribuido*
+analistas;3;Arquitetura de Software Distribuido*analistas;3;Business Intelligence*analistas;3;Engenharia de Software*
+opcao;1;Computação em Nuvem*
+segura;1;Computação em Nuvem*
+inteligencia;1;Business Intelligence*
+atuais;1;Banco de Dados*
+conhecimentos;2;Arquitetura de Software Distribuido*conhecimentos;1;Banco de Dados*conhecimentos;2;Business Intelligence*
+projeto;1;Arquitetura de Software Distribuido*projeto;1;Business Intelligence*
+basicos;2;Arquitetura de Software Distribuido*
+profissional;1;Banco de Dados*
+propor;1;Arquitetura de Software Distribuido*
+documentar;1;Arquitetura de Software Distribuido*
+importancia;1;Arquitetura de Software Distribuido*importancia;1;Business Intelligence*
+tomada;1;Business Intelligence*
+opcoes;1;Computação em Nuvem*
+capacitar;2;Arquitetura de Software Distribuido*capacitar;1;Business Intelligence*capacitar;1;Computação em Nuvem*
+servicos;1;Business Intelligence*
+redefinir;1;Arquitetura de Software Distribuido*
+informacao;3;Arquitetura de Software Distribuido*informacao;2;Banco de Dados*informacao;3;Business Intelligence*informacao;1;Engenharia de Software*
+projetar;1;Business Intelligence*
+net;1;Arquitetura de Software Distribuido*
+intuito;1;Engenharia de Software*
+fornecer;2;Arquitetura de Software Distribuido*fornecer;2;Business Intelligence*
+componentes;1;Arquitetura de Software Distribuido*
+processo;1;Arquitetura de Software Distribuido*processo;2;Business Intelligence*
+area;2;Arquitetura de Software Distribuido*area;3;Banco de Dados*area;2;Business Intelligence*area;1;Computação em Nuvem*
+tecnico;1;Arquitetura de Software Distribuido*tecnico;1;Business Intelligence*tecnico;1;Engenharia de Software*
+ambiente;1;Business Intelligence*
+metodologias;1;Engenharia de Software*
+conceituais;1;Banco de Dados*
+requisitos;1;Arquitetura de Software Distribuido*
+profissionalmente;1;Banco de Dados*
+software;10;Arquitetura de Software Distribuido*software;1;Banco de Dados*software;1;Engenharia de Software*
+jee;1;Arquitetura de Software Distribuido*
+alunos;1;Banco de Dados*alunos;1;Engenharia de Software*
+praticas;1;Banco de Dados*
+diversas;1;Business Intelligence*
+conceitos;2;Arquitetura de Software Distribuido*conceitos;1;Banco de Dados*conceitos;3;Business Intelligence*conceitos;1;Computação em Nuvem*
+dados;2;Arquitetura de Software Distribuido*dados;4;Banco de Dados*dados;4;Business Intelligence*
+profissionais;2;Arquitetura de Software Distribuido*profissionais;2;Banco de Dados*profissionais;4;Business Intelligence*profissionais;2;Computação em Nuvem*profissionais;2;Engenharia de Software*
+integrar;1;Arquitetura de Software Distribuido*
+complementar;1;Business Intelligence*
+evolucao;1;Banco de Dados*
+geral;1;Business Intelligence*
+business;1;Business Intelligence*
+mostrar;1;Arquitetura de Software Distribuido*mostrar;1;Business Intelligence*
+novos;1;Arquitetura de Software Distribuido*
+queiram;1;Arquitetura de Software Distribuido*queiram;1;Business Intelligence*
+tratamento;1;Business Intelligence*
+governanca;1;Business Intelligence*
+modelar;1;Arquitetura de Software Distribuido*
+emergentes;1;Arquitetura de Software Distribuido*emergentes;1;Banco de Dados*emergentes;1;Business Intelligence*
+desenvolvedores;1;Arquitetura de Software Distribuido*
+utilizacao;1;Computação em Nuvem*utilizacao;1;Engenharia de Software*
+verificar;1;Arquitetura de Software Distribuido*verificar;1;Business Intelligence*
+publicoalvo;1;Banco de Dados*publicoalvo;1;Computação em Nuvem*publicoalvo;1;Engenharia de Software*
+aperfeicoar;1;Arquitetura de Software Distribuido*aperfeicoar;1;Business Intelligence*
+database;1;Business Intelligence*
+distribuidos;1;Arquitetura de Software Distribuido*
+perspectivas;1;Business Intelligence*
+tecnologia;2;Arquitetura de Software Distribuido*
+competitiva;1;Business Intelligence*
+bpm;1;Arquitetura de Software Distribuido*
+atuem;1;Engenharia de Software*
+negocios;1;Arquitetura de Software Distribuido*negocios;2;Business Intelligence*negocios;1;Engenharia de Software*
+impactos;1;Arquitetura de Software Distribuido*impactos;1;Business Intelligence*
+engenharia;3;Arquitetura de Software Distribuido*engenharia;1;Banco de Dados*engenharia;1;Business Intelligence*engenharia;2;Engenharia de Software*
+competencias;1;Arquitetura de Software Distribuido*competencias;1;Business Intelligence*
+areas;1;Banco de Dados*areas;1;Business Intelligence*areas;1;Engenharia de Software*
+junto;1;Engenharia de Software*
+movel;1;Arquitetura de Software Distribuido*
+independente;1;Business Intelligence*
+ponto;1;Arquitetura de Software Distribuido*
+visao;1;Arquitetura de Software Distribuido*visao;2;Banco de Dados*visao;2;Business Intelligence*
+bi;4;Business Intelligence*
+curso;2;Computação em Nuvem*curso;1;Engenharia de Software*
+nuvem;1;Arquitetura de Software Distribuido*nuvem;4;Computação em Nuvem*
+novas;1;Arquitetura de Software Distribuido*
+aplicativos;1;Arquitetura de Software Distribuido*
+tambem;1;Computação em Nuvem*
+necessarios;1;Arquitetura de Software Distribuido*
+essenciais;1;Banco de Dados*
+objetivo;1;Engenharia de Software*
+garantia;1;Business Intelligence*
+aplicacoes;1;Computação em Nuvem*
+tirar;1;Computação em Nuvem*
+corporativo;1;Arquitetura de Software Distribuido*
+aplicalas;1;Engenharia de Software*
+voltada;1;Banco de Dados*
+desenvolvimento;3;Arquitetura de Software Distribuido*desenvolvimento;1;Business Intelligence*desenvolvimento;1;Engenharia de Software*
+coordenadores;1;Arquitetura de Software Distribuido*coordenadores;1;Business Intelligence*coordenadores;1;Engenharia de Software*
+conduzir;1;Computação em Nuvem*
+corporativa;1;Business Intelligence*
+variados;1;Engenharia de Software*
+distribuido;3;Arquitetura de Software Distribuido*
+discutir;1;Arquitetura de Software Distribuido*discutir;1;Business Intelligence*
+melhorar;1;Business Intelligence*
+implementar;1;Computação em Nuvem*
+dba;1;Business Intelligence*
+definicao;1;Arquitetura de Software Distribuido*
+busca;2;Banco de Dados*
+tecnologica;1;Banco de Dados*
+continuo;1;Banco de Dados*
+empresa;1;Computação em Nuvem*
+acessos;1;Business Intelligence*
+apresentar;2;Banco de Dados*
+arquitetura;6;Arquitetura de Software Distribuido*
+identificar;1;Arquitetura de Software Distribuido*identificar;2;Business Intelligence*
+decisao;1;Business Intelligence*
+gerentes;2;Arquitetura de Software Distribuido*gerentes;2;Business Intelligence*gerentes;1;Engenharia de Software*
+objetivos;1;Banco de Dados*objetivos;1;Computação em Nuvem*objetivos;1;Engenharia de Software*
+qualidade;1;Business Intelligence*
+organizacoes;1;Computação em Nuvem*
+telecomunicacoes;1;Arquitetura de Software Distribuido*
+executar;1;Business Intelligence*
+web;2;Arquitetura de Software Distribuido*
+suportar;1;Computação em Nuvem*
+integralos;1;Arquitetura de Software Distribuido*
+;4;Arquitetura de Software Distribuido*
