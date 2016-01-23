@@ -78,22 +78,22 @@ public class UsuarioServlet extends HttpServlet {
 				String competencias[]= request.getParameterValues("competencia");
 				
 				String outrasCompetencias[] = request.getParameterValues("outraCompetencia");
-				
-
-				if(outrasCompetencias != null){
-					listaIdOutrasCompetencias = UsuarioController.cadastroOutrasCompetencias(outrasCompetencias);
-				}
-				
+			
 				if(competencias != null){
 					for(int i = 0; i < competencias.length; i++){
 						listaCompetencias.add(competencias[i]);
 					}
-					
+				}
+
+				if(outrasCompetencias != null){
+					listaIdOutrasCompetencias = UsuarioController.cadastroOutrasCompetencias(outrasCompetencias);
+				
 					if(listaIdOutrasCompetencias != null){
 						listaCompetencias.addAll(listaIdOutrasCompetencias);
 					}
-					salvou = UsuarioController.cadastroUsuario(nome, email, listaCompetencias);
 				}
+				
+				salvou = UsuarioController.cadastroUsuario(nome, email, listaCompetencias);
 				
 				if(salvou == true){
 					response.sendRedirect("./login.jsp?not=sucess");

@@ -17,6 +17,10 @@ input[type=text]{
 	width: 350px;
 }
 
+input[type=email]{
+	width: 350px;
+}
+
 p input[type=checkbox]{
 	margin: 5px;
 }

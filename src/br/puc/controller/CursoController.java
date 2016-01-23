@@ -52,8 +52,8 @@ public class CursoController {
 					}
 				}
 
-				// se a palavra nao existe na lista é montado um objeto de
-				// frequencia de termos e esse objeto é inserido na lista
+				// se a palavra nao existe na lista ï¿½ montado um objeto de
+				// frequencia de termos e esse objeto ï¿½ inserido na lista
 				if (existe == false) {
 					freqTermos.setCurso(curso);
 					freqTermos.setPalavra(palavra);
@@ -73,11 +73,11 @@ public class CursoController {
 	
 	/**
 	 * TODO
-	 * @function	gerarArquivoInvertido faz todas as operações necessarias para a criação do arquivo invertido,
-	 * 				incluindo o pré-processamento dos documentos e a criação da tabela hash.
+	 * @function	gerarArquivoInvertido faz todas as operaï¿½ï¿½es necessarias para a criaï¿½ï¿½o do arquivo invertido,
+	 * 				incluindo o prï¿½-processamento dos documentos e a criaï¿½ï¿½o da tabela hash.
 	 * @param		caminho - caminho da pasta de documentos txt
 	 * @return		TRUE tabela hash criada e salva em arquivo
-	 * 				FALSE erro durante a execução do processo
+	 * 				FALSE erro durante a execuï¿½ï¿½o do processo
 	 */
 	public boolean gerarArquivoInvertido(String caminho){
 
@@ -95,7 +95,7 @@ public class CursoController {
 			// Gera a lista de objetos do tipo FrequenciaTermos com todos os arquivos do diretorio
 			for (int i = 0; i < lista.size(); i++) {
 				
-				//PRÉ-PROCESSAMENTO
+				//PRï¿½-PROCESSAMENTO
 				//lista com todas as palavras existentes nos arquivos
 				List<String> listaPalavras = arq.lerArquivoCurso(lista.get(i), caminho);
 				
@@ -117,5 +117,19 @@ public class CursoController {
 		}
 		
 		return retorno;
+	}
+	
+	/**
+	 * 
+	 * @param nome
+	 * @param descricao
+	 * @param caminho
+	 * @return
+	 */
+	public static boolean salvarCurso(String curso, String descricao, String caminho){
+		
+		boolean status = Arquivo.gravarCurso(curso, descricao, caminho);
+		
+		return status;
 	}
 }

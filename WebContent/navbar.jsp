@@ -4,11 +4,9 @@
 	if (session.getAttribute("id") == null) {
 %>
 	<jsp:forward page="login.jsp"></jsp:forward>
-
 <%
 	}
 %>
-
 
 <nav class="navbar navbar-ct-blue navbar-fixed-top" role="navigation">
       <div class="container">
@@ -22,7 +20,7 @@
           <a class="navbar-brand navbar-brand-logo" href="./index.jsp">
                 <div class="logo">
 					<img src="img/r.jpeg" style="width: 50px; heigth: 50px;" />                </div>
-                <div class="brand" style="width: 300px;">PosGraduacaoRecommander</div>
+                <div class="brand" style="width: 300px;"><% out.print(session.getAttribute("nome")); %></div>
               </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

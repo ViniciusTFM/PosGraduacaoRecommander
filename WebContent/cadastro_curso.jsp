@@ -1,11 +1,6 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-
-
-<%@ page language="java" import="java.util.*,java.lang.*" %> 
-<%@ page language="java" import="br.puc.entidades.Competencia" %> 
-<%@ page language="java" import="br.puc.controller.UsuarioController" %> 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,9 +10,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
 	<title>Cadastrar Curso | PosGraduacaoRecommander</title>
-
+	
 	<!-- Bibliotecas JavaScript -->
 	
 	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
@@ -25,44 +20,38 @@
 	<script src='js/ct-navbar.js' type="text/javascript"></script>
 	<script src='js/rodape.js' type="text/javascript"></script>
 	
-
-    <!-- Estilos CSS -->
-
-
+	<!-- Estilos CSS -->
+	
 	<link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/docs.css">
-    <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="css/ct-navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/ct-navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
 
-
-	
 </head>
 
 <body>
 
 	<!-- Static navbar -->
-    <jsp:include page="navbar.jsp" />
+	<jsp:include page="navbar.jsp" />
 
-    <jsp:useBean id="servlet" class="br.puc.servlets.CursoServlet" scope="session" />
+	<jsp:useBean id="servlet" class="br.puc.servlets.CursoServlet" scope="session" />
 
-    
-    <div class="container" style="margin-top:150px">
-    
-		<form class="form-horizontal" name="cadastro_cursos" action="CursoServlet" method="post" >
-		
+	<div class="container" style="margin-top: 150px">
+
+		<form class="form-horizontal" name="cadastro_cursos" action="CursoServlet" method="post">
+
 			<fieldset>
 				<legend>Cadastro de Usuário</legend>
-				
+
 				<div class="form-group">
 					<label class="control-label" for="inputNome">Curso:</label>
 					<div class="controls">
-						<input id="inputNome" name="nome" type="text" placeholder="Digite nome do curso..." required/>
+						<input id="inputNome" name="nome" type="text" placeholder="Digite nome do curso..." required />
 					</div>
 				</div>
-				
+
 				<div class="form-group">
 					<label class="control-label" for="descricaoCurso">Descrição do Curso:</label>
 					<div class="controls">
@@ -70,23 +59,19 @@
 					</div>
 				</div>
 
-				
 				<div class="form-group">
 					<div class="controls">
-					<br><br>
-						<input type="hidden" name="operacao" value="incluirCurso" /> 
-						<button class="btn btn-danger" type="button" onclick="window.location.href='/PosGraduacaoRecommander/index.jsp'">Cancelar</button>
-						<button class="btn btn-success" type="reset" >Limpar</button>
-						<button class="btn btn-primary" type="submit" >Salvar</button>
-											
+						<br><br><input type="hidden" name="operacao" value="incluirCurso" />
+						<button class="btn btn-danger" type="button" onclick="window.location.href='/PosGraduacaoRecommander/curso.jsp'">Cancelar</button>
+						<button class="btn btn-success" type="reset">Limpar</button>
+						<button class="btn btn-primary" type="submit">Salvar</button>
 					</div>
 				</div>
-				
+
 			</fieldset>
 		</form>
 	</div>
 
-
-    <jsp:include page="rodape.jsp" />
+	<jsp:include page="rodape.jsp" />
 </body>
 </html>

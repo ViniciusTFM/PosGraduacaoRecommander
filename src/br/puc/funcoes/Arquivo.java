@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.List;
@@ -13,7 +15,7 @@ import java.util.Scanner;
 import br.puc.entidades.FrequenciaTermos;
 
 /**
- * @class 	A Classe ARQUIVO é responsavel por fazer a leitura dos arquivos
+ * @class 	A Classe ARQUIVO ï¿½ responsavel por fazer a leitura dos arquivos
  *        	referentes aos cursos e apartir deles gerar o arquivo invertido 
  *        	com as palavras chave referentes a cada curso.
  * 
@@ -25,7 +27,7 @@ public class Arquivo {
 	 * TODO
 	 * @function 	lerDiretorios - verifica todos os arquivos
 	 * @param		caminho - caminho da pasta de documentos txt 
-	 * @return 		Lista os nomes de todos os arquivos de cursos já cadastrados
+	 * @return 		Lista os nomes de todos os arquivos de cursos jï¿½ cadastrados
 	 */
 	public List<String> lerDiretorios(String caminho) {
 
@@ -76,7 +78,7 @@ public class Arquivo {
 	
 	/**
 	 * TODO
-	 * @function 	lerArquivoCurso - lê o conteudo de um arquivo especificado
+	 * @function 	lerArquivoCurso - lï¿½ o conteudo de um arquivo especificado
 	 * @param 		documento - Nome do documento a ser lido
 	 * @param 		caminho - caminho do documento
 	 * @return 		lista com todos os termos de um documento
@@ -123,7 +125,7 @@ public class Arquivo {
 	
 	/**
 	 * TODO
-	 * @function 	lerHash - Lê hash do arquivo txt
+	 * @function 	lerHash - Lï¿½ hash do arquivo txt
 	 * @param 		caminho - caminho da pasta de documentos txt
 	 * @return		Tabela hash do tipo Hashtable
 	 */
@@ -142,7 +144,7 @@ public class Arquivo {
             String temp; 
             String[] campos = null;
             
-            /*	A cada interação, é uma linha do arquivo e atribui-a a temp 
+            /*	A cada interaï¿½ï¿½o, ï¿½ uma linha do arquivo e atribui-a a temp 
              *	Le cada linha e coloca os registros no formato abaixo:
              *	curso;palavra;frequencia/
              *	onde: 
@@ -174,13 +176,50 @@ public class Arquivo {
             }   
         }   
         catch (FileNotFoundException el){   
-            System.out.println("Arquivo não Encontrado: " + el);   
+            System.out.println("Arquivo nÃ£o Encontrado: " + el);   
         }   
         catch (IOException e){   
             e.printStackTrace();   
         }   
 		
 		return hash;
+	}
+	
+	/**
+	 * TODO
+	 * @param curso
+	 * @param descricao
+	 * @param caminho
+	 * @return
+	 */
+	public static boolean gravarCurso(String curso, String descricao, String caminho){
+
+		System.out.println(caminho);
+		boolean status = false;
+		caminho = caminho + "/arquivo/Cursos/"+curso+".txt";
+		
+		try{
+			
+			FileWriter arq = new FileWriter(caminho);
+			
+			PrintWriter gravarArq = new PrintWriter(arq);
+
+			String[] a = descricao.split("\r\n"); 
+			
+			for(int i = 0; i<a.length; i++) {
+				
+					gravarArq.printf(a[i]); //linha
+					gravarArq.printf("%n"); //quebra de linha
+			}
+
+			arq.close();
+			status = true;
+			
+		}catch(Exception e){
+            System.out.println("Arquivo nÃ£o Encontrado: " + e);   
+		}
+		
+		return status;
 	}
 	
 }

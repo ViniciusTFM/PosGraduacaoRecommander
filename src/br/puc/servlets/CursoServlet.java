@@ -67,14 +67,20 @@ public class CursoServlet extends HttpServlet {
 		if(request.getParameter("operacao").equalsIgnoreCase("incluirCurso")) {
 			
 			String curso = request.getParameter("nome");
-			String texto = request.getParameter("descricao");
+			String descricao = request.getParameter("descricao");
 			
 			ServletContext context = request.getServletContext();
 			String caminho = context.getRealPath("/WEB-INF");
 			
 			try{
 				
+				boolean retorno = CursoController.salvarCurso(curso, descricao, caminho);
 				
+				if(retorno){
+					response.sendRedirect("curso.jsp?not=CcSucess");
+				}else{
+					response.sendRedirect("curso.jsp?not=CcFalse");
+				}
 				
 			}catch(Exception e){
 				System.out.println("Erro Servlet CursoServlet ao salvat curso: " + e);
