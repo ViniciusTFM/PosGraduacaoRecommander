@@ -12,6 +12,7 @@ public class RecomendacaoController {
 	
 	/**
 	 * TODO
+	 * COmentar esse metodo
 	 * @function	gerarRecomendacao - 
 	 * @param 		competencias
 	 * @param 		caminho
@@ -28,7 +29,7 @@ public class RecomendacaoController {
 			//leitura da hash e cruzamento de dados com as competencias
 			recomendacoes = buscarDadosHash(competencias, caminho);
 			
-			//gera uma lista com as recomendações
+			//gera uma lista com as recomendaÃ§Ãµes
 			for(int i = 0; i < recomendacoes.size(); i++){
 				
 				boolean controle = false;
@@ -53,7 +54,7 @@ public class RecomendacaoController {
 				}
 			}
 			
-			//ordena a lista de recomendacoes onde o primeiro elemento da lista é o curso mais recomendado
+			//ordena a lista de recomendacoes onde o primeiro elemento da lista Ã© o curso mais recomendado
 			cursosMaisRecomendados = ordenarRecomendacao(cursos);
 			
 		}catch(Exception e){
@@ -68,7 +69,7 @@ public class RecomendacaoController {
 	 * @function	buscarDadosHash - faz a leitura do arquivo da hash e recupera as listas referentes
 	 * 				as palavras chave do perfil do usuario
 	 * @param 		competencias - lista de palavras chave do usuario
-	 * @param 		caminho - caminho onde é armazenado a hash
+	 * @param 		caminho - caminho onde Ã© armazenado a hash
 	 * @return		lista do tipo FrequenciaTermos com o cruzamento de dados da hash com as competencias
 	 * 				obtidas pelo perfil do usuario
 	 */
@@ -91,7 +92,7 @@ public class RecomendacaoController {
 						cursoCompetencia.add(lista.get(j));
 					}
 				}else{
-					System.out.println("Copetencia " + competencias.get(i) + " não existe na hash!");
+					System.out.println("Copetencia " + competencias.get(i) + " nÃ£o existe na hash!");
 				}
 			}
 		}catch(Exception e){
@@ -128,7 +129,7 @@ public class RecomendacaoController {
 					break;
 				}
 				
-				/*	compara todas as posicoes com a primeira e verifica se o peso é maior
+				/*	compara todas as posicoes com a primeira e verifica se o peso Ã© maior
 				 *	add na variavel temp o curso que contem maior peso e maior peso por palavras 
 				 */
 				for(int j = 0; j < listaCursos.size(); j++){
@@ -154,7 +155,7 @@ public class RecomendacaoController {
 				cursosRecomendados.add(temp.getCurso());
 			}
 		}catch(Exception e){
-			System.out.println("Erro ao ordenar a recomendação: " + e);
+			System.out.println("Erro ao ordenar a recomendaÃ§Ã£o: " + e);
 		}
 		
 		return cursosRecomendados;
