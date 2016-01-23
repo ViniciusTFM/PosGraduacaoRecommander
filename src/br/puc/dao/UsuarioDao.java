@@ -49,7 +49,7 @@ public class UsuarioDao {
 				return(new ArrayList<Competencia>());
 			}
 			
-			System.out.println("\nFechando conexão ... ");
+			System.out.println("\nFechando conexï¿½o ... ");
 			con.close();
 			
 		}catch(Exception e){
@@ -108,7 +108,7 @@ public class UsuarioDao {
 	 * @return		boolean  	true: persistencia feita com sucesso
 	 * 							false: erro ao fazer a persistencia
 	 */
-	public static boolean salvarUsuario(String nome, String email, String[] competencias){
+	public static boolean salvarUsuario(String nome, String email, List<String> competencias){
 		
 		boolean retorno = false;
 		int id = addUsuario(nome, email);
@@ -120,9 +120,9 @@ public class UsuarioDao {
 			String sql = "insert into tb_usuario_competencia (id_usuario, id_competencia) values (?,?);";
 			PreparedStatement comando = con.prepareStatement(sql);
 			
-			for(int i = 0; i < competencias.length; i++){
+			for(int i = 0; i < competencias.size(); i++){
 				comando.setInt(1, id); 
-				comando.setInt(2, Integer.parseInt(competencias[i]));
+				comando.setInt(2, Integer.parseInt(competencias.get(i)));
 				comando.execute();
 			}
 
@@ -181,5 +181,71 @@ public class UsuarioDao {
 		}
 		
 		return user;
+	}
+	
+	/**
+	 * 
+	 * @param outrasCompetencias
+	 * @return
+	 */
+	public static List<String> cadastroCompetencias(String[] outrasCompetencias){
+		
+		List<String> chavesOutrasCompetencias = null;
+		
+		try{
+			Connection con = conexao.obterConexao();
+			
+			String sql = "insert into tb_competencia (competencia) value (?);";
+			
+			PreparedStatement comando = con.prepareStatement(sql);
+			
+			for(int i = 0; i < outrasCompetencias.length; i++){
+				comando.setString(1, outrasCompetencias[i]); 
+				comando.execute();
+			}
+			
+			chavesOutrasCompetencias = consultaOutrasCompetencias(outrasCompetencias);
+		}catch(Exception e){
+			System.out.println("Erro ao persistir outras competencias: " + e.getMessage());
+		}
+		return chavesOutrasCompetencias;
+	}
+	
+	/**
+	 * 
+	 * @param outrasCompetencias
+	 * @return
+	 */
+	public static List<String> consultaOutrasCompetencias(String[] outrasCompetencias){
+		
+		List<String> retorno = new ArrayList<String>();
+		
+		try{
+			Connection con = conexao.obterConexao();
+			
+			String sql = "select id from tb_competencia where competencia = ?;";
+			PreparedStatement comando = con.prepareStatement(sql);
+
+			for(int i = 0; i < outrasCompetencias.length; i++){
+				comando.setString(1, outrasCompetencias[i]);
+				
+				ResultSet resultado = comando.executeQuery();
+			
+				if (resultado.next()) {
+					retorno.add(resultado.getString("id"));
+				}
+				
+			}
+			con.close();
+			
+			for(int i = 0; i < retorno.size(); i++){
+				System.out.println(retorno.get(i));
+			}
+			
+		}catch(Exception e){
+			System.out.println("Erro ao consultar outras competencias: " + e);
+		}
+		
+		return retorno;
 	}
 }

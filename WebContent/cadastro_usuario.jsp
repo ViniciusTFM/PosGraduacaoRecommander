@@ -24,27 +24,23 @@
 	<script src='js/bootstrap.min.js' type="text/javascript"></script>
 	<script src='js/ct-navbar.js' type="text/javascript"></script>
 	<script src='js/rodape.js' type="text/javascript"></script>
+	<script src='js/cadastro_usuarios.js' type="text/javascript" charset="utf-8"></script>
+	
 
     <!-- Estilos CSS -->
 
-	<link rel="stylesheet" href="css/bootstrap.css" />
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/docs.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/ct-navbar.css">
-	<link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
-	<link rel="stylesheet" href="css/pe-icon-7-stroke.css" />
+	<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
 	
-
 </head>
 
 <body>
 
-	
-	
 	<!-- Static navbar -->
         <jsp:include page="navbar_nao_autenticado.jsp" />
 
@@ -101,16 +97,25 @@
 				</div>
 				
 				
-				<div class="control-group">
+				<br>
+				<span class="glyphicon glyphicon-eye-open" title="Caso não exista todas suas competencias nas opções acima,  você pode inserir-las em 'Outras competências'!"></span>
+				<br>
 				
-					<label class="control-label" for="inputEmail">Outras Competencias</label>
+				<div class="control-group">
+					<label class="control-label" for="competencias">Outras Competencias: </label>
+					<p>
+						<a href="javascript:mais()" >
+							<span class="glyphicon glyphicon-plus" ></span> Inserir campo
+						</a>
+					</p>
 					<div class="controls">
-					
-						
-					
+						<p>
+
+						<div id="outrasCompetencias"></div>
+						</p>
 					</div>
 				</div>
-				
+					
 				
 				<div class="control-group">
 					<div class="controls">
@@ -121,7 +126,6 @@
 						<button class="btn btn-primary" type="submit" >Salvar</button>
 					</div>
 				</div>
-				
 				
 			</fieldset>
 		</form>

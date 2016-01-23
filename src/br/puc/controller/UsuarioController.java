@@ -30,7 +30,7 @@ public class UsuarioController {
 	 * @return				booleano 	true - cadastrado com sucesso
 	 * 									false - erro ao cadastrar
 	 */
-	public static boolean cadastroUsuario(String nome, String email, String[] competencias){
+	public static boolean cadastroUsuario(String nome, String email, List<String> competencias){
 		
 		boolean retorno = false;
 		
@@ -47,5 +47,17 @@ public class UsuarioController {
 	 */
 	public static Usuario login(String email){
 		return UsuarioDao.loginUsuario(email);
+	}
+	
+	/**
+	 * 
+	 * @param outrasCompetencias
+	 * @return
+	 */
+	public static List<String> cadastroOutrasCompetencias (String[] outrasCompetencias){
+		
+		List<String> lista = UsuarioDao.cadastroCompetencias(outrasCompetencias);
+		
+		return lista;
 	}
 }

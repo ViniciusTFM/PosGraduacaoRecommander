@@ -51,7 +51,7 @@
 		<div class="grid">
 		    <div class="row col-md-12">
 		          <div class="tile tile-green col-md-3 col-xs-12"  >
-		            <a href="#" >
+		            <a href="./cadastro_curso.jsp" >
 		              <h1>Cadastrar Novo Curso</h1>
 		            </a>
 		          </div>

@@ -44,7 +44,7 @@
 								<ul class="dropdown-menu">
 									
 									<!-- <li class="divider"></li> -->
-									<li><a href="UsuarioServlet?operacao=logout">Sair</a></li>
+									<li><a href="UsuarioServlet?operacao=logout"><span class="glyphicon glyphicon-off"></span>   Sair</a></li>
 								</ul>
 							</li>
 							

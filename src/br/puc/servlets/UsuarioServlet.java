@@ -43,8 +43,8 @@ public class UsuarioServlet extends HttpServlet {
 				// no logout invalido a sessao
 				HttpSession sessao = request.getSession();
 				sessao.invalidate();
-				// chamo novamente a pagina principal, que deve chamar a página index
-				// que ira mostrar o formulario para o usuário logar
+				// chamo novamente a pagina principal, que deve chamar a pï¿½gina index
+				// que ira mostrar o formulario para o usuï¿½rio logar
 				response.sendRedirect("login.jsp");
 				
 			}	
@@ -62,25 +62,43 @@ public class UsuarioServlet extends HttpServlet {
 		
 		try{
 		
+			
 			ServletContext context = request.getServletContext();
 			String caminho = context.getRealPath("/WEB-INF");
 			
 			
 			if(request.getParameter("operacao").equalsIgnoreCase("incluir")){
+
+				List<String> listaCompetencias = new ArrayList<String>();
+				List<String> listaIdOutrasCompetencias = null;
 				boolean salvou = false;
 				
 				String nome = request.getParameter("nome");
 				String email = request.getParameter("email");
 				String competencias[]= request.getParameterValues("competencia");
 				
+				String outrasCompetencias[] = request.getParameterValues("outraCompetencia");
+				
+
+				if(outrasCompetencias != null){
+					listaIdOutrasCompetencias = UsuarioController.cadastroOutrasCompetencias(outrasCompetencias);
+				}
+				
 				if(competencias != null){
-					salvou = UsuarioController.cadastroUsuario(nome, email, competencias);
+					for(int i = 0; i < competencias.length; i++){
+						listaCompetencias.add(competencias[i]);
+					}
+					
+					if(listaIdOutrasCompetencias != null){
+						listaCompetencias.addAll(listaIdOutrasCompetencias);
+					}
+					salvou = UsuarioController.cadastroUsuario(nome, email, listaCompetencias);
 				}
 				
 				if(salvou == true){
-					response.sendRedirect("/login.jsp?not=sucess");
+					response.sendRedirect("./login.jsp?not=sucess");
 				}else{
-					response.sendRedirect("/login.jsp?not=error");
+					response.sendRedirect("./cadastro_usuario.jsp?not=error");
 				}
 
 				//redirecionar para login
@@ -91,7 +109,7 @@ public class UsuarioServlet extends HttpServlet {
 				
 				List<String> listaCompetencias = PreProcessamento.normalizarCompetencias(user.getCompetencias(), caminho);
 				
-				//cria uma sessão
+				//cria uma sessï¿½o
 				HttpSession sessao = request.getSession();
 				
 				if(user.getId() == 0){

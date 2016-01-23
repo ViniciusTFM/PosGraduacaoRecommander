@@ -14,6 +14,7 @@ import br.puc.controller.CursoController;
  * Servlet implementation class CursoServlet
  */
 public class CursoServlet extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -55,13 +56,33 @@ public class CursoServlet extends HttpServlet {
 		}
 	}
 
+	
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-	
-	}
+		if(request.getParameter("operacao").equalsIgnoreCase("incluirCurso")) {
+			
+			String curso = request.getParameter("nome");
+			String texto = request.getParameter("descricao");
+			
+			ServletContext context = request.getServletContext();
+			String caminho = context.getRealPath("/WEB-INF");
+			
+			try{
+				
+				
+				
+			}catch(Exception e){
+				System.out.println("Erro Servlet CursoServlet ao salvat curso: " + e);
+			}
+			
+			
 
+
+		}
+	}
 }
