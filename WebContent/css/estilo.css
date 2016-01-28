@@ -24,3 +24,16 @@ input[type=email]{
 p input[type=checkbox]{
 	margin: 5px;
 }
+
+#notific {
+	position:relative !important;
+	display: inline !important;;
+	top: 90px !important;
+}
+
+.logo img{
+	 max-width:60px;
+    max-height:60px;
+    width: auto;
+    height: auto;
+}

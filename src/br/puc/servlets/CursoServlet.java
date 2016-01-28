@@ -46,9 +46,9 @@ public class CursoServlet extends HttpServlet {
 				retorno = controller.gerarArquivoInvertido(caminho);
 				
 				if(retorno){
-					response.sendRedirect("curso.jsp?not=sucess");
+					response.sendRedirect("curso.jsp?not=ArqInvSuccess");
 				}else{
-					response.sendRedirect("curso.jsp?not=error");
+					response.sendRedirect("curso.jsp?not=ArqInvError");
 				}
 			}
 		}catch(Exception e){
@@ -77,9 +77,9 @@ public class CursoServlet extends HttpServlet {
 				boolean retorno = CursoController.salvarCurso(curso, descricao, caminho);
 				
 				if(retorno){
-					response.sendRedirect("curso.jsp?not=CcSucess");
+					response.sendRedirect("curso.jsp?not=CadCursoSuccess");
 				}else{
-					response.sendRedirect("curso.jsp?not=CcFalse");
+					response.sendRedirect("curso.jsp?not=CadCursoError");
 				}
 				
 			}catch(Exception e){

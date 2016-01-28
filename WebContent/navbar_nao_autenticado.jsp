@@ -9,7 +9,9 @@
           </button>
           <a class="navbar-brand navbar-brand-logo" href="./index.jsp">
                 <div class="logo">
-					<img src="img/r.jpeg" style="width: 50px; heigth: 50px;" />                </div>
+					<!-- <img src="img/curtir.png" /> -->
+					<img src="img/r.jpeg" />  
+                </div>
                 <div class="brand" style="width: 300px;">PosGraduacaoRecommander</div>
               </a>
         </div>

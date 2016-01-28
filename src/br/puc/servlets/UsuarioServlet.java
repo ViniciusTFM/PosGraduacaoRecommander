@@ -93,12 +93,15 @@ public class UsuarioServlet extends HttpServlet {
 					}
 				}
 				
-				salvou = UsuarioController.cadastroUsuario(nome, email, listaCompetencias);
-				
-				if(salvou == true){
-					response.sendRedirect("./login.jsp?not=sucess");
+				if(listaCompetencias.size() > 0){
+					salvou = UsuarioController.cadastroUsuario(nome, email, listaCompetencias);
+					if(salvou == true){
+						response.sendRedirect("./login.jsp?not=CadUserSuccess");
+					}else{
+						response.sendRedirect("./cadastro_usuario.jsp?not=CadUserError");
+					}
 				}else{
-					response.sendRedirect("./cadastro_usuario.jsp?not=error");
+					response.sendRedirect("./cadastro_usuario.jsp?not=CadUserError");
 				}
 
 				//redirecionar para login
@@ -113,7 +116,7 @@ public class UsuarioServlet extends HttpServlet {
 				HttpSession sessao = request.getSession();
 				
 				if(user.getId() == 0){
-					response.sendRedirect("login.jsp?not=erro_login");
+					response.sendRedirect("login.jsp?not=loginError");
 				}else{
 				
 					// setando um atributo da sessao

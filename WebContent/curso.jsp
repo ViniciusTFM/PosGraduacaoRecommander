@@ -1,7 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +11,12 @@
 	
 	<!-- Bibliotecas JavaScript -->
 	
-	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-	<script src='js/bootstrap.min.js' type="text/javascript"></script>
-	<script src='js/ct-navbar.js' type="text/javascript"></script>
-	<script src='js/rodape.js' type="text/javascript"></script>
-	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src='js/bootstrap.min.js' ></script>
+	<script type="text/javascript" src='js/ct-navbar.js'></script>
+	<script type="text/javascript" src='js/rodape.js'></script>
+	<script type="text/javascript" src='js/Curso/notificacao_curso.js' charset="utf-8"></script>
+		
 	<!-- Estilos CSS -->
 	
 	<link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css">
@@ -35,7 +32,25 @@
 
 	<!-- Static navbar -->
 	<jsp:include page="navbar.jsp" />
+	
+	<!--  Notificações -->
+	<%	if (request.getParameter("not") != null) {    
+			if(request.getParameter("not").equalsIgnoreCase("CadCursoSuccess")) {
+	%>			<input type="hidden" value="CadCursoSuccess" id="notificacao" />
+	<%		}else if(request.getParameter("not").equalsIgnoreCase("CadCursoError")) {
+	%>			<input type="hidden" value="CadCursoError" id="notificacao" />
+	<%		}else if(request.getParameter("not").equalsIgnoreCase("ArqInvSuccess")) {
+	%>			<input type="hidden" value="ArqInvSuccess" id="notificacao" />
+	<%		}else if(request.getParameter("not").equalsIgnoreCase("ArqInvError")) {
+	%>			<input type="hidden" value="ArqInvError" id="notificacao" />
+	<%		}
+		}
+	%>
 
+	<div id="notific"></div>
+
+	
+	<!--  Corpo da pagina -->
 	<div class="container" style="margin-top: 150px">
 
 		<h3 id="thumbnails-default">Funções</h3>

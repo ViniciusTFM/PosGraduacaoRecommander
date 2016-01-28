@@ -1,7 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
 <%@ page language="java" import="java.util.*,java.lang.*"%>
 <%@ page language="java" import="br.puc.entidades.Competencia"%>
 <%@ page language="java" import="br.puc.controller.UsuarioController"%>
@@ -11,28 +7,29 @@
 
 <head>
 
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Cadastrar Usuario | PosGraduacaoRecommander</title>
-
-<!-- Bibliotecas JavaScript -->
-
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src='js/bootstrap.min.js'></script>
-<script type="text/javascript" src='js/ct-navbar.js'></script>
-<script type="text/javascript" src='js/rodape.js'></script>
-<script type="text/javascript" src='js/cadastro_usuarios.js' charset="utf-8"></script>
-
-<!-- Estilos CSS -->
-
-<link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/docs.css">
-<link rel="stylesheet" type="text/css" href="css/menu.css">
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-<link rel="stylesheet" type="text/css" href="css/ct-navbar.css">
-<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Cadastrar Usuario | PosGraduacaoRecommander</title>
+	
+	<!-- Bibliotecas JavaScript -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src='js/bootstrap.min.js' ></script>
+	<script type="text/javascript" src='js/ct-navbar.js'></script>
+	<script type="text/javascript" src='js/rodape.js'></script>
+	<script type="text/javascript" src='js/Perfil/cadastro_usuarios.js' charset="utf-8"></script>
+	<script type="text/javascript" src='js/Perfil/notificacao_usuario.js' charset="utf-8"></script>
+	
+	<!-- Estilos CSS -->
+	
+	<link rel="stylesheet" type="text/css" href="css/metro-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/docs.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/ct-navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/pe-icon-7-stroke.css" />
 
 </head>
 
@@ -41,17 +38,29 @@
 	<!-- Static navbar -->
 	<jsp:include page="navbar_nao_autenticado.jsp" />
 
+
+	<!--  Notificações -->
+	<%	if (request.getParameter("not") != null) {    
+			if(request.getParameter("not").equalsIgnoreCase("CadUserError")) {
+	%>			<input type="hidden" value="erroCadUsuario" id="notificacao" />
+	<%		}
+		}
+	%>
+
+	<div id="notific"></div>
+
+
+	<!--  Corpo da Pagina -->
 	<div class="container" style="margin-top: 150px">
 
-		<form class="form-horizontal" name="cadastro_usuarios"
-			action="UsuarioServlet" method="post">
+		<form class="form-horizontal" name="cadastro_usuarios" action="UsuarioServlet" method="post">
 
 			<fieldset>
 				<legend>Cadastro de Usuário</legend>
 
 				<div class="control-group">
 					<label class="control-label" for="inputNome">Nome:</label>
-					<div class="controls">
+					<div class="controls" >
 						<input id="inputNome" name="nome" type="text" placeholder="Digite o seu nome..." required />
 					</div>
 				</div>
@@ -125,6 +134,8 @@
 		</form>
 	</div>
 
+	<!--  Rodapé -->
 	<jsp:include page="rodape.jsp" />
+	
 </body>
 </html>

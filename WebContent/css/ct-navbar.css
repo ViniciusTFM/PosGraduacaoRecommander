@@ -102,10 +102,9 @@ h1 .subtitle{
 /*             Inputs               */
 .form-control {
     background-color: #FFFFFF;
-    border: 1px solid #E3E3E3;
-    border-radius: 4px;
+    border: 1px solid #CCCCCC;
     box-shadow: none;
-    color: #444444;
+    color: #000040;
     height: 38px;
     padding: 6px 16px;
 }
@@ -333,6 +332,7 @@ h1 .subtitle{
     float: left;
     overflow: hidden;
     width: 60px;
+    height: 60px
 }
 .navbar .navbar-brand-logo .brand{
     color: #FFFFFF;

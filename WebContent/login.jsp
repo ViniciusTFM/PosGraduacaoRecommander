@@ -7,10 +7,11 @@
 	<!-- Bibliotecas JavaScript -->
 
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src='js/bootstrap.min.js'></script>
+	<script type="text/javascript" src='js/bootstrap.min.js' ></script>
 	<script type="text/javascript" src='js/ct-navbar.js'></script>
 	<script type="text/javascript" src='js/rodape.js'></script>
-	<script type="text/javascript" src='js/cadastro_usuarios.js' charset="utf-8"></script>
+	<script type="text/javascript" src='js/Perfil/notificacao_usuario.js' charset="utf-8"></script>
+
 
 	<!-- Estilos CSS -->
 
@@ -28,6 +29,21 @@
 
 <!-- Static navbar -->
     <jsp:include page="navbar_nao_autenticado.jsp" />
+
+<!--  -->
+
+<% 	if (request.getParameter("not") != null) {    
+		if(request.getParameter("not").equalsIgnoreCase("CadUserSuccess")) {
+%>			<input type="hidden" value="CadUserSuccess" id="notificacao" />
+<%		}else if(request.getParameter("not").equalsIgnoreCase("loginError")) {
+%>			<input type="hidden" value="loginError" id="notificacao" />
+<%		}
+	}
+%>
+
+	<div id="notific"></div>
+
+
 
 		<div class="container" style="margin-top:150px">
 			
@@ -50,7 +66,6 @@
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 								<input class="form-control" placeholder="E-mail" id="username" type="email" name="email" /> 
 							</div>
-								
 								
 							<input type="hidden" name="operacao" value="login" /> 
 							<input type="submit" value="Entrar" class="btn btn-lg btn-primary btn-block" onclick="notificacao();">

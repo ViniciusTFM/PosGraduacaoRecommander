@@ -1,7 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,10 +11,10 @@
 	
 	<!-- Bibliotecas JavaScript -->
 	
-	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-	<script src='js/bootstrap.min.js' type="text/javascript"></script>
-	<script src='js/ct-navbar.js' type="text/javascript"></script>
-	<script src='js/rodape.js' type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src='js/bootstrap.min.js' ></script>
+	<script type="text/javascript" src='js/ct-navbar.js'></script>
+	<script type="text/javascript" src='js/rodape.js'></script>
 	
 	<!-- Estilos CSS -->
 	

@@ -19,10 +19,10 @@
 	
 	<!-- Bibliotecas JavaScript -->
 	
-	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
-	<script src='js/bootstrap.min.js' type="text/javascript"></script>
-	<script src='js/ct-navbar.js' type="text/javascript"></script>
-	<script src='js/rodape.js' type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src='js/bootstrap.min.js' ></script>
+	<script type="text/javascript" src='js/ct-navbar.js'></script>
+	<script type="text/javascript" src='js/rodape.js'></script>
 	
 	<!-- Estilos CSS -->
 	
@@ -95,17 +95,13 @@
 					</ul>
 
 
-					<div class="grid">
-						<div class="row col-md-10">
-							<div class="tile tile-purple col-md-2 col-xs-12">
-
-								<a href="./index.jsp">
-									<h1>Voltar</h1>
-								</a>
-
-							</div>
-						</div>
+				<div class="control-group">
+					<div class="controls">
+						<br> <br> <input type="hidden" name="operacao" value="incluir" />
+						<button class="btn btn-info" type="button" onclick="window.location.href='/PosGraduacaoRecommander/index.jsp'">Voltar</button>
 					</div>
+				</div>
+
 					
 				</div>
 				
